@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_ID = 'my-first-devops-project-444911'
+        PROJECT_ID = 'gcppavan1321'
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-service-account')  // Service account credential
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/saleemafroze/appengine-poc.git'
+                git branch: 'main', url: 'https://github.com/PavanKumar-Devops/demo-jenkins-repo.git'
             }
         }
 
